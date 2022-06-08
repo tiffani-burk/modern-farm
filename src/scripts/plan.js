@@ -1,5 +1,11 @@
+//steps
+//1. go to main and import and invoke the createPlan function
+//2. store value in a var called yearlyPlan and return it
+//3. console log
+
 //array
 const types = ["Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"]
+
 
 //exported function
 export const createPlan = () => {
@@ -15,6 +21,7 @@ export const createPlan = () => {
 
     return plan
 }
+
 
 
 

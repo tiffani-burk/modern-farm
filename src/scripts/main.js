@@ -10,8 +10,8 @@
 
 console.log("Welcome to the main module")
 
-//import the createPlan function 
-import {createPlan} from './plan.js' 
+//import and invoke createPlant function from plan.js
+import { createPlan } from './plan.js'
 
 const yearlyPlan = createPlan() //invoking the function
 
@@ -79,3 +79,6 @@ import { usePlants } from './field.js'
 const plantCopy = usePlants()
 //console.log
 console.log(plantCopy)
+
+
+
