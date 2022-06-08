@@ -4,10 +4,11 @@
 //4. invoke function in main
 //5. console log it in main
 
-const createPotato = () => {
+export const createPotato = () => { //dont forget to export
     const potatoObj = {
         type: 'Potato',
         height: 32,
         output: 2
     }
+    return potatoObj            //dont forget to return, since we want an output
 }

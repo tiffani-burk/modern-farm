@@ -24,7 +24,7 @@ import { createAsparagus } from './seeds/asparagus.js'
 const asparagusSeed = createAsparagus()
 
 //console log the new variable
-console.log(asparagusSeed)
+console.log("asparagusSeed", asparagusSeed) 
 
 //import potato func
 import { createPotato } from './seeds/potato.js'
@@ -67,5 +67,15 @@ console.log(soySeed)
 import { createCorn } from './seeds/corn.js'
 
 //invoke corn function 
+const cornSeed = createCorn()
 
 //console log corn var
+console.log(cornSeed)
+
+
+//importing usePlants function into main
+import { usePlants } from './field.js'
+//invoke
+const plantCopy = usePlants()
+//console.log
+console.log(plantCopy)

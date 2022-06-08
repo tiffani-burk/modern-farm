@@ -6,12 +6,24 @@
 
 
 
-const createAsparagus = () => {
+export const createAsparagus = () => {
     const plantProp = {
         type: 'asparagus',
         height: 24,
         output: 4
     }
+    return plantProp
 } 
 
+//recipe
+// export const createSeed = (typeOf, heightOf, outputOf) => {
+//     const plantProp = {
+//         type: typeOf,
+//         height: heightOf,
+//         output: outputOf 
+//     }
+//     return plantProp
+// }
 
+// const potatoSeed = createSeed('potato', 32, 2)
+// const wheatSeed = createSeed('wheat', 96, 12)

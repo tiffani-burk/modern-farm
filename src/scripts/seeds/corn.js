@@ -4,7 +4,7 @@
 //3. invoke function in main
 //4. console log it in main
 
-const createCorn = () => {
+export const createCorn = () => {
     const cornArray = [
         { 
             type: 'Corn',
@@ -17,4 +17,5 @@ const createCorn = () => {
             output: 6
         }
     ]
+   return cornArray
 }
