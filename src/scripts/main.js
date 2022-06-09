@@ -15,8 +15,8 @@ import { createPlan } from './plan.js'
 
 const yearlyPlan = createPlan() //invoking the function
 
-console.log(yearlyPlan)
-
+console.log("yearlyPlan", yearlyPlan)
+ 
 //invoke plant seeds and pass it yearlyPlan
 plantSeeds(yearlyPlan)
 
@@ -27,7 +27,7 @@ import { createAsparagus } from './seeds/asparagus.js'
 const asparagusSeed = createAsparagus()
 
 //console log the new variable
-console.log("asparagusSeed", asparagusSeed) 
+console.log("asparagusSeed", asparagusSeed) //can comment the name using  ""
 
 //import potato func
 import { createPotato } from './seeds/potato.js'
@@ -36,7 +36,7 @@ import { createPotato } from './seeds/potato.js'
 const potatoSeed = createPotato()
 
 //console log
-console.log(potatoSeed)
+console.log( "potatoSeed", potatoSeed)
 
 //import wheat function 
 import { createWheat } from './seeds/wheat.js'
@@ -45,7 +45,7 @@ import { createWheat } from './seeds/wheat.js'
 const wheatSeed = createWheat()
 
 //console log var
-console.log(wheatSeed)
+console.log( "wheatSeed", wheatSeed)
 
 //import sunfloer function 
 import {createSunflower} from './seeds/sunflower.js'
@@ -54,7 +54,7 @@ import {createSunflower} from './seeds/sunflower.js'
 const sunFlowerSeeds = createSunflower()
 
 //console log
-console.log(sunFlowerSeeds)
+console.log("sunFlowerSeeds", sunFlowerSeeds)
 
 //import soybean function 
 import { createSoybean } from './seeds/soybean.js'
@@ -63,7 +63,7 @@ import { createSoybean } from './seeds/soybean.js'
 const soySeed = createSoybean()
 
 //console log variable
-console.log(soySeed)
+console.log("soySeed", soySeed)
 
 
 //  imoport corn function
@@ -73,7 +73,7 @@ import { createCorn } from './seeds/corn.js'
 const cornSeed = createCorn()
 
 //console log corn var
-console.log(cornSeed)
+console.log("cornSeed", cornSeed)
 
 
 //importing usePlants function into main
@@ -82,7 +82,7 @@ import { plantSeeds } from './tractor.js'
 //invoke
 const plantCopy = usePlants()
 //console.log
-console.log(plantCopy)
+console.log( "plantCopy", plantCopy)
 
 
 
