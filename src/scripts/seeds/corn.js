@@ -19,3 +19,5 @@ export const createCorn = () => {
     ]
    return cornArray
 }
+
+//make sure it loops through corn array 

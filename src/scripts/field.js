@@ -23,37 +23,40 @@ const plantsInField = []
 
 
 //exporting a function 
-export const addPlant = () => {
+export const addPlant = (seedObj) => {
+    //push seedObj to empty array above
+    plantsInField.push(seedObj)
+}
 
 //invoke createPotato function
-const potatoSeed = createPotato()
-//pushing potatoSeed to plantsInField array
-plantsInField.push (potatoSeed)
+// const potatoSeed = createPotato()
+// //pushing potatoSeed to plantsInField array
+// plantsInField.push (potatoSeed)
 
-//invoke 
-const asparagusSeed = createAsparagus()
-//push
-plantsInField.push(asparagusSeed)
+// //invoke 
+// const asparagusSeed = createAsparagus()
+// //push
+// plantsInField.push(asparagusSeed)
 
-//invoke
-const wheatSeed = createWheat()
-//push
-plantsInField.push(wheatSeed)
+// //invoke
+// const wheatSeed = createWheat()
+// //push
+// plantsInField.push(wheatSeed)
 
-//invoke
-const sunflowerSeed = createSunflower()
-//push
-plantsInField.push(sunflowerSeed)
+// //invoke
+// const sunflowerSeed = createSunflower()
+// //push
+// plantsInField.push(sunflowerSeed)
 
-//invoke 
-const soybeanSeed = createSoybean()
-//push
-plantsInField.push(soybeanSeed)
+// //invoke 
+// const soybeanSeed = createSoybean()
+// //push
+// plantsInField.push(soybeanSeed)
 
-const cornSeed = createCorn()
-//push
-plantsInField.push(cornSeed)
-}
+// const cornSeed = createCorn()
+// //push
+// plantsInField.push(cornSeed)
+// }
 
 
 

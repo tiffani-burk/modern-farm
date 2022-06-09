@@ -17,6 +17,9 @@ const yearlyPlan = createPlan() //invoking the function
 
 console.log(yearlyPlan)
 
+//invoke plant seeds and pass it yearlyPlan
+plantSeeds(yearlyPlan)
+
 //import seed functions 
 import { createAsparagus } from './seeds/asparagus.js'
 
@@ -75,6 +78,7 @@ console.log(cornSeed)
 
 //importing usePlants function into main
 import { usePlants } from './field.js'
+import { plantSeeds } from './tractor.js'
 //invoke
 const plantCopy = usePlants()
 //console.log
