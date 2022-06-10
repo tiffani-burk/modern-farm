@@ -79,10 +79,18 @@ console.log("cornSeed", cornSeed)
 //importing usePlants function into main
 import { usePlants } from './field.js'
 import { plantSeeds } from './tractor.js'
-//invoke
+
+//invoked usePlants and set = to plantCopy var
 const plantCopy = usePlants()
 //console.log
 console.log( "plantCopy", plantCopy)
 
+
+import { addPlant } from './field.js'
+import { harvestPlants } from './harvester.js'
+
+
+//invoking add plant and passing data from plantSeeds
+addPlant(plantSeeds)
 
 

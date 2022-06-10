@@ -4,6 +4,8 @@
 //4. invoke function in main
 //5. console log it in main
 
+//Goal of this function is to return an object with the type, height and output. 
+
 export const createPotato = () => { //dont forget to export
     const potatoObj = {
         type: 'Potato',

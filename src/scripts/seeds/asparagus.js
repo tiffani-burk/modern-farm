@@ -5,6 +5,7 @@
 //5. console log it in main
 
 
+//goal of this function is to create a seed
 
 export const createAsparagus = () => {
     const plantProp = {

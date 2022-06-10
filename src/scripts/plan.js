@@ -7,6 +7,8 @@
 const types = ["Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"]
 
 
+//Goal of this function: to return an array of randomized plants.
+
 //exported function
 export const createPlan = () => {
     const plan = []

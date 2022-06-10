@@ -15,18 +15,20 @@ import { createWheat } from './seeds/wheat.js'
 import { createSunflower } from './seeds/sunflower.js'
 import { createSoybean } from './seeds/soybean.js'
 import { createCorn } from './seeds/corn.js'
+import { plantSeeds } from './tractor.js'
 
 
 
-//var that is going to store the plants
-const plantsInField = [] 
+//var that is going to store all the plants growing in the field
+let plantsInField = [] 
 
-
+//Goal of this funtion: to add the seed to the field
 //exporting a function 
 export const addPlant = (seedObj) => {
     //push seedObj to empty array above
     plantsInField.push(seedObj)
 }
+
 
 //invoke createPotato function
 // const potatoSeed = createPotato()
@@ -60,7 +62,7 @@ export const addPlant = (seedObj) => {
 
 
 
-//exported function that will return a copy of array
+//exported function that will return a copy of the array plantsInField
 export const usePlants = () => {
     const copyOfPlantsinField = [...plantsInField]
     return copyOfPlantsinField

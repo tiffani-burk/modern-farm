@@ -13,6 +13,10 @@ import { createSoybean } from "./seeds/soybean.js"
 import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 
+
+//Goal of this function: to iterate through the array of plants stored in createPlan 
+/// and take the seeds and add them to array in plants in field mod 
+
 // define and export a function 
 export const plantSeeds = (plan) => {
     for (let i = 0; i < plan.length; i++) { //loops through parent array
@@ -21,7 +25,7 @@ export const plantSeeds = (plan) => {
            if (plan[i][j] === 'Potato') { //plan [i][j] is each item in each nested array
                 //create the potato seed
                 const potatoSeed = createPotato() //invoke function
-                //sow potato seed by invoking appPlant and adding potatoSeed as argument
+                //sow potato seed by invoking addPlant and adding potatoSeed as argument
                 addPlant(potatoSeed)
            }
            if (plan[i][j] === 'Corn') {
@@ -44,6 +48,7 @@ export const plantSeeds = (plan) => {
               const wheatSeed = createWheat
               addPlant(wheatSeed)
           }
+          return plan
     }
 }
 }
