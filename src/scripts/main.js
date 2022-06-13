@@ -70,7 +70,7 @@ console.log("soySeed", soySeed)
 import { createCorn } from './seeds/corn.js'
 
 //invoke corn function 
-const cornSeed = createCorn()
+const cornSeed = createCorn() //capturing return value of createCorn in a var
 
 //console log corn var
 console.log("cornSeed", cornSeed)
@@ -81,16 +81,15 @@ import { usePlants } from './field.js'
 import { plantSeeds } from './tractor.js'
 
 //invoked usePlants and set = to plantCopy var
-const plantCopy = usePlants()
+const plantsInField = usePlants()
 //console.log
-console.log( "plantCopy", plantCopy)
+console.log( "plantCopy", plantsInField)
 
-
-import { addPlant } from './field.js'
 import { harvestPlants } from './harvester.js'
 
+//invoke harvestPLants
+const plants = harvestPlants(plantsInField)
 
-//invoking add plant and passing data from plantSeeds
-addPlant(plantSeeds)
+console.log("plants", plants)
 
 

@@ -13,10 +13,10 @@
 //the output equals the number of plant seed odjects this function produces
 
 export const harvestPlants = (plantsArray) => {
-       let seedObjects = []
-       for (plant of plantsArray) {
+       let harvested = []
+       for (const plant of plantsArray) { //declare plant as variable with "const"
               //unknown number of objects
-              let numberOfObjects = ''
+              let numberOfObjects = 0
               //corn is going to be cut in half
               if (plant.type === 'Corn') {
                      numberOfObjects = plant.output / 2
@@ -24,10 +24,11 @@ export const harvestPlants = (plantsArray) => {
               else {
                      numberOfObjects = plant.output
               }
-              //nested for loop 
-              for (let i = 0; i < numberOfObjects; i++)
-              //push plant to the empty seedObject array
-              seedObjects.push(plant)
+              //nested for loop to loop specified number of times, based on value of plant output
+              for (let i = 0; i < numberOfObjects; i++) {
+                     //push plant to the empty seedObject array
+                     harvested.push(plant)
+              }
        }
-       return seedObjects
-}      
+       return harvested
+}       
