@@ -1,3 +1,5 @@
+//Harvesting the Plants
+
 //steps
 //1. define and export harvestPlants function 
 //2. the function must accept plants array as input 

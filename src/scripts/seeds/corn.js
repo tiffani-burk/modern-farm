@@ -1,3 +1,6 @@
+//Creating a Seed Module
+
+
 //1. define a function 
 //2. function will return an array with 2 identicle objects in it.
 //3. import it to main.js 

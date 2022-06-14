@@ -1,3 +1,5 @@
+//TIlling the Field
+
 //Steps
 //1. Define a variable set to an empty array
 //2. Define a function named addPlant 
@@ -15,7 +17,7 @@ import { createWheat } from './seeds/wheat.js'
 import { createSunflower } from './seeds/sunflower.js'
 import { createSoybean } from './seeds/soybean.js'
 import { createCorn } from './seeds/corn.js'
-import { plantSeeds } from './tractor.js'
+
 
 
 

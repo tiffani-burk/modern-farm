@@ -81,15 +81,24 @@ import { usePlants } from './field.js'
 import { plantSeeds } from './tractor.js'
 
 //invoked usePlants and set = to plantCopy var
-const plantsInField = usePlants()
+const plantsInField = usePlants(plantSeeds)
 //console.log
 console.log( "plantCopy", plantsInField)
 
 import { harvestPlants } from './harvester.js'
+import { plantCatalog } from './catalog.js'
 
 //invoke harvestPLants
 const plants = harvestPlants(plantsInField)
 
 console.log("plants", plants)
 
+//Invoke plantCatelog and pass it the plant array as argument, then console log it. 
+const varialbleOfPlantCatelog = plantCatalog(plants)
+console.log("varialbleOfPlantCatelog", varialbleOfPlantCatelog)
+
+//variable is storing queryselector for HTML section to input JS automation of plants
+let parentHTMLElement = document.querySelector('.plant-list')
+//storing my HTML rep of all plant catelog to this variable
+parentHTMLElement.innerHTML = varialbleOfPlantCatelog
 
