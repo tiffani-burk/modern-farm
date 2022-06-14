@@ -35,22 +35,22 @@ export const plantSeeds = (plan) => {
                addPlant(cornSeed)
            }
            if (plan[i][j] === 'Asparagus') {
-               const asparagusSeed = createAsparagus
+               const asparagusSeed = createAsparagus()
                addPlant(asparagusSeed)
            }
            if (plan[i][j] === 'Soybean'){
-                const soybeanSeed = createSoybean
+                const soybeanSeed = createSoybean()
                 addPlant(soybeanSeed)
           }
           if (plan[i][j] === 'Sunflower'){
-              const sunflowerSeed = createSunflower
+              const sunflowerSeed = createSunflower()
               addPlant(sunflowerSeed)
           }
           if (plan[i][j] === 'Wheat') {
-              const wheatSeed = createWheat
+              const wheatSeed = createWheat()
               addPlant(wheatSeed)
           }
-          return plan
+     
     }
 }
 }

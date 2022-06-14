@@ -6,6 +6,7 @@
 //3. import it to main.js 
 //3. invoke function in main
 //4. console log it in main
+//Creating a Seed Module
 
 //Goal of this function is to return an array with two 
 //identical objects holding type, height and output

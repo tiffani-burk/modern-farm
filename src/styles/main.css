@@ -33,7 +33,20 @@ h1,h2,h3,h4,h5,h6 {
 .red {
     background-color: darksalmon;
 }
+.container {
+    background-color: #fff8c5;
+    margin: 1rem; 
+}
 
-.plant-list {
-    display: flex; flex-flow: wrap;
+/* The whole list of plants */
+.plant-list { 
+    display: 
+    flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+/* Specific food item */
+.harvested-food {
+    padding: 1rem;
 }
